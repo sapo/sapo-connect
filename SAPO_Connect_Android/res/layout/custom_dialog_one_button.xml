@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- THIS IS JUST A DUMMY XML LAYOUT FOR GETTING ACCESS TO THE VIEW ID's -->
+<!-- YOU MAY USE THIS AS AN EXAMPLE, BUT THE VIEWS ARE STRIPPED OF ANY BACKGROUND AND STYLE -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customDialog_layoutRoot"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+		<LinearLayout
+		    android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    android:padding="10dp">
+		    
+		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:layout_marginRight="10dp"
+		        android:contentDescription="@string/sapo_connect_content_description_custom_dialog"
+		        android:src="@drawable/icon">
+		    </ImageView>
+		    
+		    <TextView
+		    	android:id="@+id/customDialog_text"
+				android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical"
+		        android:textSize="16dip"
+		        android:textColor="@android:color/white">
+		    </TextView>
+		    
+		</LinearLayout>
+		
+	</ScrollView>
+
+    <LinearLayout
+    	android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minHeight="54dip"
+        android:paddingTop="4dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip">
+		<Button
+			android:id="@+id/customDialog_okBtn"
+			android:layout_height="wrap_content"
+			android:layout_width="120dip"
+            android:layout_margin="5dip"
+            android:layout_gravity="center"
+            android:gravity="center">
+		</Button>
+    </LinearLayout>
+</LinearLayout>

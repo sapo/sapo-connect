@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- MAIN CONTENT -->
+    
+    <LinearLayout
+	    android:orientation="vertical"
+		android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent"
+	  	android:gravity="center"
+	  	android:layout_alignParentTop="true">
+	  	
+        <TextView
+	        android:id="@+id/login_logout_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="#545454"
+	        android:textStyle="bold">
+	    </TextView>
+	    
+	    <Button
+	        android:id="@+id/service_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="4dip"
+	        android:layout_marginBottom="4dip"
+	        android:textColor="#3B3B3B"
+	        android:text="@string/invoke_service"
+	        android:visibility="gone">
+	    </Button>
+	    
+	    <TextView
+			android:id="@+id/service_response_title"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="4dip"
+		    android:layout_marginBottom="4dip"
+		    android:text="@string/service_response_title"
+		    android:textStyle="bold"
+		    android:textColor="#545454"
+		    android:visibility="invisible">
+		</TextView>
+		
+	    <ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	       	<TextView
+		        android:id="@+id/service_response_content"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#545454"
+		        android:textSize="9sp">
+		    </TextView>
+	    </ScrollView>
+	    
+	</LinearLayout>
+    
+    <!-- FOOTER -->
+	
+	<LinearLayout
+	    android:orientation="vertical"
+		android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:layout_alignParentBottom="true"
+	  	android:padding="4dip"
+	  	android:background="#6E6E6E">
+	  		    
+	    <Button
+	        android:id="@+id/login_logout_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textColor="#3B3B3B">
+	    </Button>
+	  	
+	</LinearLayout>
+        
+</RelativeLayout>

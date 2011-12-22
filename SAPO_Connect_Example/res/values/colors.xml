@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="btn_text_disabled">#999999</color>
+	<color name="btn_text_buy">#1D3D06</color>
+	<color name="btn_text_shadow">#FFFFFFFF</color>
+</resources>

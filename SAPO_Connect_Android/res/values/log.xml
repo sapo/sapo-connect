@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pt.sapo.mobile.android.connect.Log.level">debug</string>
+</resources>

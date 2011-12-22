@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/webviewContainer"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<!-- WebView added in code due to memory hog bug in SDK < 2.2  -->
+	<!-- WebView
+		android:id="@+id/webviewConnect"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</WebView-->
+
+</LinearLayout>
+

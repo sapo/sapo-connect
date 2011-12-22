@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SAPO Connect Example</string>
+    <string name="login_button">Login</string>
+    <string name="logout_button">Logout</string>
+    <string name="login_text">Session is active</string>
+    <string name="logout_text">No active session</string>
+    <string name="invoke_service">See user photos on SAPO Fotos</string>
+    <string name="service_response_title">Service response:</string>
+    <string name="login_sucess">The user was successfully logged-in.</string>
+    <string name="logout_sucess">The user is now logged-out</string>
+    <string name="custom_example_message">This is the Example Custom SAPO Connect</string>
+    <string name="dialog_title">Pick the SAPO Connect mode</string>
+</resources>

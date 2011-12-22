@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="sapo_connect_registration_incomplete">Necessita de completar o processo de registo de modo a se autenticar com sucesso.</string>
+	<string name="sapo_connect_time_offset">Verifique se a hora do seu dispositivo está correcta e tente novamente. Para sua segurança, o sistema de autenticação do SAPO requer que exista apenas um erro de 5 minutos na hora do dispositivo.</string>
+	<string name="sapo_connect_denied">Necessita de dar autorização à aplicação de modo a completar o processo de autenticação.</string>
+	<string name="sapo_connect_error_connection_mandatory">Necessita de uma ligação de dados no dispositivo para proseguir. Certifique-se que está activa, e tente de novo.</string>
+	<string name="sapo_connect_error_button_try_again">Repeat</string>
+	<string name="sapo_connect_error_button_cancel">Cancel</string>
+	<string name="sapo_connect_dialog_button_ok">Ok</string>
+	<string name="sapo_connect_error_page_button">Tentar de novo</string>
+	<string name="sapo_connect_error_page_text">Ocorreu um erro</string>
+	<string name="sapo_network_no_network_connection">Nenhuma ligação disponível à rede. Providencie uma ligação Wi-Fi ou Móvel e tente novamente.</string>
+    <string name="sapo_network_no_server_connection">O servidor está indisponível. Por favor, tente mais tarde.</string>
+	<string name="sapo_network_error_auth">Ocorreu um erro a verificar a sua identidade no servidor. Por favor, tente novamente.</string>
+    <string name="sapo_network_error_oauth">Ocorreu um erro a verificar a sua identidade no servidor. Se o erro persistir, efectue logout e tente novamente efectuar login.</string>
+    
+    <string name="sapo_connect_content_description_custom_toast">Icon do custom Toast</string>
+	<string name="sapo_connect_content_description_custom_dialog">Icon do custom Dialog</string>
+</resources>

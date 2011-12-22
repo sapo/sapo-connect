@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Do not change these values unless you know what you're doing. -->
+    <string name="sapo_connect_url">id.sapo.pt</string>
+    <string name="sapo_connect_request_token_url">/oauth/request_token</string>
+    <string name="sapo_connect_access_token_url">/oauth/access_token</string>
+    <string name="sapo_connect_authorize_url">/oauth/authorize</string>
+    <string name="sapo_connect_authorization_denied">/a/</string>
+    
+	<!-- The Consumer Secret obtained from the SAPO Connect registration site. Override this value in your application. -->
+    <string name="sapo_connect_consumer_secret">2el1cmS6EyWpQMrFnaXKLvT0OHb5wzGUI</string>
+    
+    <!-- The Consumer Key obtained from the SAPO Connect registration site. Override this value in your application. -->
+    <string name="sapo_connect_consumer_key">l8k1Qci3Lp2TOGbRBxoEU6sx75DKrM-fBJ4zqiYTukAA</string>
+    
+    <!-- The callback URL that the SAPO Connect called when the authentication process is completed. Override this value in your application. -->
+    <string name="sapo_connect_callback_url">http://callback.example.sapo.pt/authend</string>
+	
+    <!-- The services.sapo.pt STS token for service calls. Override this value in your application. -->
+	<string name="sapo_network_client_id">bffbd22e5d9acced9f8a9e6c606d9043f72df00770f4ab9714c9093b470e6edeb5a119d704e9fffee5a740a0c64f553c8e971e7feb93fe10dd80414f8221de787bc758a068aa691f19fd84d769b7551eb09f9d77e778a8361022e1fee687bd96ceed37159147964dc5ec814fac72088b81d16bb0724cbe21a4a030fc97f0f7ec68fcf8ecf4c1973ff4d2c31a4d0a74441e8bbc501eff2b34cccd8c24c09b35e3</string>
+</resources>

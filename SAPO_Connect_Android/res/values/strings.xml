@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sapo_connect_registration_incomplete">The registration operation needs to be completed in order to finish the login process.</string>
+	<string name="sapo_connect_time_offset">Check if the time on your device is correct, and try again. For your safety, the SAPO authentication system only allows a 5 minutes window error frame on the device.</string>
+	<string name="sapo_connect_denied">You must accept the authorization request in order to complete the authentication process.</string>
+	<string name="sapo_connect_error_connection_mandatory">No network connection available. Please, provide a valid Wi-Fi or Mobile connection and try again.</string>
+	<string name="sapo_connect_error_button_try_again">Repeat</string>
+	<string name="sapo_connect_error_button_cancel">Cancel</string>
+	<string name="sapo_connect_dialog_button_ok">Ok</string>
+	<string name="sapo_connect_error_page_button">Try again</string>
+	<string name="sapo_connect_error_page_text">Error</string>
+	<string name="sapo_network_no_network_connection">No network connection available. Please, provide a valid Wi-Fi or Mobile connection and try again.</string>
+    <string name="sapo_network_no_server_connection">Server is not available. Please try again later.</string>
+	<string name="sapo_network_error_auth">There was an error while validating your identity on the server. Please, try again.</string>
+    <string name="sapo_network_error_oauth">There was an error while validating your identity on the server. If the error persists, please logout and login again.</string>
+    
+    <string name="sapo_connect_content_description_custom_toast">The custom Toast icon</string>
+	<string name="sapo_connect_content_description_custom_dialog">The custom Dialog icon</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+	<!-- Disabled -->
+﻿   	<item android:state_enabled="false"
+         android:drawable="@drawable/btn_disable" />
+        
+    <!-- Pressed -->
+    <item android:state_pressed="true" 
+          android:state_enabled="true"
+         android:drawable="@drawable/btn_green_pressed" />
+    
+    <!-- Selected -->
+    <item android:state_selected="true" 
+          android:state_enabled="true"
+         android:drawable="@drawable/btn_green_selected" />
+        
+    <!-- Focused -->
+    <item android:state_focused="true" 
+          android:state_enabled="true"
+          android:drawable="@drawable/btn_green_selected" />
+        
+    <!-- Enabled and not focused or pressed -->
+    <item android:state_enabled="true"
+          android:drawable="@drawable/btn_green_normal" />
+    
+</selector>
