@@ -24,14 +24,14 @@ In the beginning of the OAuth process, a connection to a NTP server is establish
 
  1. Add to the Android application Java Build Path the three OAuth libraries that can be found in the "SAPO_Connect/lib". In Eclipse, go to "Project" > "Properties" > "Java Build Path" > Tab "Libraries" > "Add Jars"
 
-  - oauth-20100527.jar
-  - oauth-consumer-20100527.jar
-  - oauth-httpclient4-20090913.jar
+ - oauth-20100527.jar
+ - oauth-consumer-20100527.jar
+ - oauth-httpclient4-20090913.jar
 
  2. Because the Assets of an Android Library Projects are not automatically included into the application, copy the HTML files in the folder "SAPO_Connect/assets" to the assets folder of the Android app:
 
-  - empty.html
-  - error.html
+ - empty.html
+ - error.html
 
  These HTML pages can be customized according to each application.
 
