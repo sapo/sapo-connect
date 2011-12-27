@@ -46,15 +46,11 @@ In the beginning of the OAuth process, a connection to a NTP server is establish
  It will be necessary to define a name for the application and a Callback URL. This URL will be called by the SAPO ID server when the authentication process is completed, and it will be intercepted by the SAPO Connect WebView.
  We will also need to define the authorizations so that the Android app can access the desired resources. In the example below, the application "SAPO Connect Example Android" is given authorization to access the SAPO Bus resources of SAPO Fotos. 
 
- ![SAPO Connect Backoffice](/connect.png)
+ ![SAPO Connect Backoffice](connect.png)
 
 4. Create a services.xml in your app res folder and populate it with the values provided in the SAPO Connect backoffice, associating them with the following keys:
 
-'''xml
-<string name="sapo_connect_consumer_secret">2el1cmS6EyWpQMrFnaXKLvT0OHb5wzGUI</string>
-<string name="sapo_connect_consumer_key">l8k1Qci3Lp2TOGbRBxoEU6sx75DKrM-fBJ4zqiYTukAA</string>
-<string name="sapo_connect_callback_url">http://callback.example.sapo.pt/authend</string>
-'''
+![service xml values](images/xml1.png)
 
 5. Create an Activity that extends the abstract class SAPOConnect. E.g., MyAppSAPOConnect. Implement the required methods:
 
