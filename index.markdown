@@ -50,21 +50,11 @@ In the beginning of the OAuth process, a connection to a NTP server is establish
 
 4. Create a services.xml in your app res folder and populate it with the values provided in the SAPO Connect backoffice, associating them with the following keys:
 
- <div class="code">
- <pre><span class="nt">&lt;string</span> <span
-   class="na">name=</span><span class="s">"sapo_connect_consumer_secret"</span><span
-   class="nt">&gt;</span>jr73qCpEwb0kydxsQgmGWSMNOYi6l2Xvf<span
-   class="nt">&lt;/string&gt;</span><br><span
-   class="nt">&lt;string</span> <span class="na">name=</span><span
-   class="s">"sapo_connect_consumer_key"</span><span
-   class="nt">&gt;</span>ReAXsaIKhd0oVtNin3mCrfTEOiIQnMx0YOHXvvni42nA<span
-   class="nt">&lt;/string&gt;</span><br><span
-   class="nt">&lt;string</span> <span class="na">name=</span><span
-   class="s">"sapo_connect_callback_url"</span><span
-   class="nt">&gt;</span>http://callback.voucher.sapo.pt/authend<span
-   class="nt">&lt;/string&gt;</span>
- </pre>
- </div>
+'''xml
+<string name="sapo_connect_consumer_secret">2el1cmS6EyWpQMrFnaXKLvT0OHb5wzGUI</string>
+<string name="sapo_connect_consumer_key">l8k1Qci3Lp2TOGbRBxoEU6sx75DKrM-fBJ4zqiYTukAA</string>
+<string name="sapo_connect_callback_url">http://callback.example.sapo.pt/authend</string>
+'''
 
 5. Create an Activity that extends the abstract class SAPOConnect. E.g., MyAppSAPOConnect. Implement the required methods:
 
