@@ -22,41 +22,41 @@ In the beginning of the OAuth process, a connection to a NTP server is establish
 
 # SAPO CONNECT INTEGRATION WITH MINIMUM CONFIGURATION
 
- 1. Add to the Android application Java Build Path the three OAuth libraries that can be found in the "SAPO_Connect/lib". In Eclipse, go to "Project" > "Properties" > "Java Build Path" > Tab "Libraries" > "Add Jars"
+1. Add to the Android application Java Build Path the three OAuth libraries that can be found in the "SAPO_Connect/lib". In Eclipse, go to "Project" > "Properties" > "Java Build Path" > Tab "Libraries" > "Add Jars"
 
  - oauth-20100527.jar
  - oauth-consumer-20100527.jar
  - oauth-httpclient4-20090913.jar
 
- 2. Because the Assets of an Android Library Projects are not automatically included into the application, copy the HTML files in the folder "SAPO_Connect/assets" to the assets folder of the Android app:
+2. Because the Assets of an Android Library Projects are not automatically included into the application, copy the HTML files in the folder "SAPO_Connect/assets" to the assets folder of the Android app:
 
  - empty.html
  - error.html
 
- These HTML pages can be customized according to each application.
+  These HTML pages can be customized according to each application.
 
- The "error.html" is showed to the user every time we have an error in the WebView. E.g., instead of showing an HTML page with a standard 404 error, it will be showed this error page in which the string %%ERROR%% will be replaced with the error cause.
+  The "error.html" is showed to the user every time we have an error in the WebView. E.g., instead of showing an HTML page with a standard 404 error, it will be showed this error page in which the string %%ERROR%% will be replaced with the error cause.
 
- The "empty.html" page is only used to show inactivity in the WebView, or when we want to hide some page from the user. E.g., when the WebView is busy communicating with WebServices or when we intercept some callback of a non existing page. This page, like the error page, can also be customized.
+  The "empty.html" page is only used to show inactivity in the WebView, or when we want to hide some page from the user. E.g., when the WebView is busy communicating with WebServices or when we intercept some callback of a non existing page. This page, like the error page, can also be customized.
 
- Both pages will be showed in the WebView with a transparent background, so that if the implementing app has some Theme with an image background, it will be visible.
+  Both pages will be showed in the WebView with a transparent background, so that if the implementing app has some Theme with an image background, it will be visible.
 
- 3. The next step is to register the Android application in the SAPO Connect backoffice. Go to [http://id.sapo.pt/connect](http://id.sapo.pt/connect) and login with your SAPO user account. Go through "Gerir as minhas aplicações" > "Criar nova aplicação".
+3. The next step is to register the Android application in the SAPO Connect backoffice. Go to [http://id.sapo.pt/connect](http://id.sapo.pt/connect) and login with your SAPO user account. Go through "Gerir as minhas aplicações" > "Criar nova aplicação".
 
- It will be necessary to define a name for the application and a Callback URL. This URL will be called by the SAPO ID server when the authentication process is completed, and it will be intercepted by the SAPO Connect WebView.
- We will also need to define the authorizations so that the Android app can access the desired resources. In the example below, the application "SAPO Connect Example Android" is given authorization to access the SAPO Bus resources of SAPO Fotos. 
+  It will be necessary to define a name for the application and a Callback URL. This URL will be called by the SAPO ID server when the authentication process is completed, and it will be intercepted by the SAPO Connect WebView.
+  We will also need to define the authorizations so that the Android app can access the desired resources. In the example below, the application "SAPO Connect Example Android" is given authorization to access the SAPO Bus resources of SAPO Fotos. 
 
-   ![SAPO Connect Backoffice](images/connect.png)
+  ![SAPO Connect Backoffice](images/connect.png)
 
- 4. Create a services.xml in your app res folder and populate it with the values provided in the SAPO Connect backoffice, associating them with the following keys:
+4. Create a services.xml in your app res folder and populate it with the values provided in the SAPO Connect backoffice, associating them with the following keys:
 
-   ![XML values 1](images/xml1.png)
+  ![XML values 1](images/xml1.png)
 
- 5. Create an Activity that extends the abstract class SAPOConnect. E.g., MyAppSAPOConnect. Implement the required methods:
+5. Create an Activity that extends the abstract class SAPOConnect. E.g., MyAppSAPOConnect. Implement the required methods:
 
-   ![Java Code 1](images/java1.png)
+  ![Java Code 1](images/java1.png)
 
-    And this is it. This is the minimum configuration for an Android app to use the SAPO Connect Android Library Project. With this, the application can now authenticate through SAPO ID and invoke WebServices in the SAPO Bus that require an OAuth signature.
+  And this is it. This is the minimum configuration for an Android app to use the SAPO Connect Android Library Project. With this, the application can now authenticate through SAPO ID and invoke WebServices in the SAPO Bus that require an OAuth signature.
 
 # USAGE
 
