@@ -1,7 +1,3 @@
----
-title: SAPO Connect for Android
----
-
 # SAPO Connect for Android
 
 The SAPO Connect Android Library Project contains the implementation of the SAPO ID interface, so that a user can be authenticated and authorized to invoke an OAuth service registered in SAPO Bus.
